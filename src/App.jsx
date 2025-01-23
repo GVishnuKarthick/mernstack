@@ -1,18 +1,10 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import NotFound from './components/NotFound';
-
-const App = () => {
+import FormValidate from './FormValidate';
+const App =() => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} /> {/* Correct the "notfound" path */}
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <h1 style ={{textAlign:'center'}}>React Form Validation</h1>
+    <FormValidate/>
+    </div>
   );
 };
-
 export default App;
